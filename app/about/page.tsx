@@ -18,7 +18,7 @@ const page = () => {
         <div className="mt-6">
           <h2 className="text-xl font-bold text-gray-800 mb-2">Our Mission</h2>
           <p className="text-gray-700 leading-relaxed">
-            Our mission is to innovate and collaborate with businesses of all sizes, transforming their ideas into impactful digital solutions. Whether you're a startup looking to establish your digital presence or an enterprise aiming to scale, we are committed to delivering solutions that not only meet but exceed your expectations.
+            Our mission is to innovate and collaborate with businesses of all sizes, transforming their ideas into impactful digital solutions. Whether you are a startup looking to establish your digital presence or an enterprise aiming to scale, we are committed to delivering solutions that not only meet but exceed your expectations.
           </p>
         </div>
         <div className="mt-6">
