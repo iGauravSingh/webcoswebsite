@@ -22,7 +22,7 @@ const page = () => {
   return (
     <>
     <Navbar />
-    <div className=' mb-12 px-11'>
+    <div className=' mb-12 px-11 font-Poppins'>
         <h3 className=' mt-8 text-2xl text-slate-950 tracking-widest mb-7 text-center'>Our Courses</h3>
 
         

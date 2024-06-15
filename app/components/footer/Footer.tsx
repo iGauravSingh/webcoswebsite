@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -13,13 +14,13 @@ const Footer = () => {
                 
                 <div className="mt-4">
                     <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-                        <a className="text-gray-500 cursor-pointer hover:text-gray-700">
+                        <a className="text-gray-200 cursor-pointer hover:text-gray-700">
                             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 className="w-5 h-5" viewBox="0 0 24 24">
                                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                             </svg>
                         </a>
-                        <a className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                        <a className="ml-3 text-gray-200 cursor-pointer hover:text-gray-700">
                             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 className="w-5 h-5" viewBox="0 0 24 24">
                                 <path
@@ -27,14 +28,14 @@ const Footer = () => {
                                 </path>
                             </svg>
                         </a>
-                        <a className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                        <a className="ml-3 text-gray-200 cursor-pointer hover:text-gray-700">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
                                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                             </svg>
                         </a>
-                        <a className="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                        <a className="ml-3 text-gray-200 cursor-pointer hover:text-gray-700">
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="0" className="w-5 h-5" viewBox="0 0 24 24">
                                 <path stroke="none"
@@ -48,67 +49,65 @@ const Footer = () => {
             </div>
             <div className="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
                 <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                    <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About</h2>
+                    <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">About</h2>
                     <nav className="mb-10 list-none">
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Company</a>
+                            <Link href="/about" className="text-gray-200 cursor-pointer hover:text-gray-900">Company</Link>
                         </li>
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Careers</a>
+                            <Link href="/" className="text-gray-200 cursor-pointer hover:text-gray-900">Careers</Link>
                         </li>
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Blog</a>
+                            <Link href="/"  className="text-gray-200 cursor-pointer hover:text-gray-900">Blog</Link>
                         </li>
                     </nav>
                 </div>
                 <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                    <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Support</h2>
+                    <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Support</h2>
                     <nav className="mb-10 list-none">
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Contact Support</a>
+                            <Link href="/contact"  className="text-gray-200 cursor-pointer hover:text-gray-900">Contact Support</Link>
                         </li>
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Help Resources</a>
+                            <Link href="/contact"  className="text-gray-200 cursor-pointer hover:text-gray-900">Help Resources</Link>
                         </li>
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Release Updates</a>
+                            <Link href="/"  className="text-gray-200 cursor-pointer hover:text-gray-900">Release Updates</Link>
                         </li>
                     </nav>
                 </div>
                 <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                    <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Platform
+                    <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Platform
                     </h2>
                     <nav className="mb-10 list-none">
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Terms &amp; Privacy</a>
+                            <Link href="/"  className="text-gray-200 cursor-pointer hover:text-gray-900">Terms &amp; Privacy</Link>
                         </li>
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Pricing</a>
+                            <Link href="/" className="text-gray-200 cursor-pointer hover:text-gray-900">Pricing</Link>
                         </li>
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">FAQ</a>
+                            <Link href="/" className="text-gray-200 cursor-pointer hover:text-gray-900">FAQ</Link>
                         </li>
                     </nav>
                 </div>
                 <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                    <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
+                    <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Contact</h2>
                     <nav className="mb-10 list-none">
+                        
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Send a Message</a>
+                            <Link href="/"  className="text-gray-200 cursor-pointer hover:text-gray-900">Request a Quote</Link>
                         </li>
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
-                        </li>
-                        <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">+91 9999999999</a>
+                            <Link href="/"  className="text-gray-200 cursor-pointer hover:text-gray-900">+91 9651114762</Link>
                         </li>
                     </nav>
                 </div>
             </div>
         </div>
-        <div className="bg-gray-300">
+        <div className="bg-purple-600">
             <div className="container px-5 py-4 mx-auto">
-                <p className="text-sm text-gray-700 capitalize xl:text-center">© 2024 All rights reserved </p>
+                <p className="text-sm text-white capitalize xl:text-center">© 2024 All rights reserved </p>
             </div>
         </div>
     </footer>

@@ -140,8 +140,8 @@ const Hero = () => {
 
         {/* burger for small  */}
 
-        <div className=" md:hidden">
-          <IoMdMenu size={35} color="#222627" />
+        <div className=" md:hidden z-40">
+          <IoMdMenu size={35} color="#fefefe" />
         </div>
       </nav>
 
@@ -150,7 +150,7 @@ const Hero = () => {
       <div className=" w-screen h-screen  flex flex-col gap-4 md:flex-row font-Poppins items-center justify-center px-12">
         {/* image section  */}
 
-        <div className=" w-[100%] md:w-[50%] h-full overflow-clip z-20">
+        <div className=" w-[100%] md:w-[50%] h-full overflow-clip z-20 ">
           <Image
             className=" animate-herobounce"
             src="/webdev3.png"
@@ -172,6 +172,7 @@ const Hero = () => {
             on their behaviors.
           </p>
           {/* <button className=" border-2 border-logoblack px-4 py-3 w-[150px] text-lg text-logoblack">About Us</button> */}
+          <Link href="/about">
           <button className="relative inline-block text-lg group w-[150px]">
             <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
               <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
@@ -183,6 +184,7 @@ const Hero = () => {
               data-rounded="rounded-lg"
             ></span>
           </button>
+          </Link>
           {/* <div className=' absolute top-0 right-0 -mt-6 w-28 h-28 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 z-10'></div>
         <div className=' absolute top-0 right-0 -mt-10 w-[300px] h-[300px] rounded-full bg-gradient-to-r from-purple-400 to-blue-400'></div>
          */}

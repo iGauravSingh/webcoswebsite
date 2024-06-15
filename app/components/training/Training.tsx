@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const courseData = [
@@ -32,7 +33,9 @@ const Training = () => {
             <div className=" w-full absolute top-1/2 left-1/2 -translate-x-1/2 z-20 -translate-y-1/2 hidden group-hover:block">
             <p className=" text-white text-center text-wrap px-2">{item.desc}</p>
             <div className=" w-full flex justify-center">
+              <Link href="/training">
             <button className=" bg-purple-500 px-2 py-1 text-white mt-1">Read More</button>
+            </Link>
             </div>
             </div>
           </div>

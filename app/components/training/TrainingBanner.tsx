@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 import { FaFileCode } from "react-icons/fa";
 
@@ -14,6 +15,7 @@ const TrainingBanner = () => {
             <p className=' text-white font-md tracking-wide '>Our focus on quality education at every stage ensures</p>
             <p className='text-white font-md tracking-wide'> 100% success of our students that have a road-map.</p>
             </div>
+            <Link href="/training">
             <button className="relative inline-block text-lg group w-[150px]">
             <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
               <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
@@ -25,6 +27,7 @@ const TrainingBanner = () => {
               data-rounded="rounded-lg"
             ></span>
           </button>
+          </Link>
         </div>
     </div>
   )
