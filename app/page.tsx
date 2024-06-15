@@ -11,7 +11,14 @@ import Faq from "./components/faq/Faq";
 import Testimonial from "./components/testimonial/Testimonial";
 import Training from "./components/training/Training";
 import TrainingBanner from "./components/training/TrainingBanner";
+import { Metadata } from 'next';
 
+
+export const metadata: Metadata = {
+  title: 'Webcos',
+  description:
+    'webcos.in: Coding - the art, the science, and the passion.',
+};
 
 export default function Home() {
   return (
