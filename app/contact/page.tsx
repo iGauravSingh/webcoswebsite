@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -17,7 +18,18 @@ const page = () => {
                 We would love to hear from you.
               </p>
             </div>
-            <div className="mt-8 text-center"></div>
+            <div className="mt-8 text-center">
+              
+            <Image
+            className=" animate-herobounce"
+            src="/contactus.png"
+            alt="hero image"
+            layout="responsive"
+            width={500}
+            height={500}
+            objectFit="cover"
+          />
+            </div>
           </div>
           <div>
             <div>

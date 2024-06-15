@@ -7,7 +7,7 @@ const page = () => {
     <>
     <Navbar />
     <div>
-        services
+        <h3>Our Services</h3>
     </div>
     <Footer />
     </>

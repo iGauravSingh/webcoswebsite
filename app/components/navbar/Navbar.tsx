@@ -25,9 +25,10 @@ const Navbar: React.FC = () => {
     <>
     <div>
     
-      <nav className=" w-screen flex items-center justify-between bg-purple-300 text-white py-2 px-12">
+      <nav className=" relative w-screen flex items-center justify-between bg-purple-400 text-white py-2 px-12">
+        <div className=" absolute w-full h-full bg-white/20 backdrop-blur-sm"></div>
         {/* logo  */}
-        <div className=" ">
+        <div className=" z-30 ">
           <Image
             src="/webcos.png"
             alt=" webcos logo"
@@ -43,12 +44,12 @@ const Navbar: React.FC = () => {
             href="/"
             onMouseEnter={() => setHoverHome(true)}
             onMouseLeave={() => setHoverHome(false)}
-            className="relative inline-block text-base font-medium text-indigo-500 z-30"
+            className="relative inline-block text-base font-medium text-white z-30"
           >
             <span className="block">Home</span>
             <span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
               <span
-                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-indigo-500 ${
+                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-white ${
                   hoverHome ? "" : "translate-x-full"
                 }`}
                 style={{ transition: "ease-out 300ms" }}
@@ -61,12 +62,12 @@ const Navbar: React.FC = () => {
             href="/services"
             onMouseEnter={() => setHoverServices(true)}
             onMouseLeave={() => setHoverServices(false)}
-            className="relative inline-block text-base font-medium text-indigo-500 z-30"
+            className="relative inline-block text-base font-medium text-white z-30"
           >
             <span className="block">Services</span>
             <span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
               <span
-                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-indigo-500 ${
+                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-white ${
                   hoverServices ? "" : "translate-x-full"
                 }`}
                 style={{ transition: "ease-out 300ms" }}
@@ -79,12 +80,12 @@ const Navbar: React.FC = () => {
             href="/training"
             onMouseEnter={() => setHoverTraining(true)}
             onMouseLeave={() => setHoverTraining(false)}
-            className="relative inline-block text-base font-medium text-indigo-500 z-30"
+            className="relative inline-block text-base font-medium text-white z-30"
           >
             <span className="block">Training</span>
             <span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
               <span
-                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-indigo-500 ${
+                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-white ${
                   hoverTraining ? "" : "translate-x-full"
                 }`}
                 style={{ transition: "ease-out 300ms" }}
@@ -97,12 +98,12 @@ const Navbar: React.FC = () => {
             href="/about"
             onMouseEnter={() => setHoverAbout(true)}
             onMouseLeave={() => setHoverAbout(false)}
-            className="relative inline-block text-base font-medium text-indigo-500 z-30"
+            className="relative inline-block text-base font-medium text-white z-30"
           >
             <span className="block">About us</span>
             <span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
               <span
-                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-indigo-500 ${
+                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-white ${
                   hoverAbout ? "" : "translate-x-full"
                 }`}
                 style={{ transition: "ease-out 300ms" }}
@@ -115,12 +116,12 @@ const Navbar: React.FC = () => {
             href="/contact"
             onMouseEnter={() => setHoverContact(true)}
             onMouseLeave={() => setHoverContact(false)}
-            className="relative inline-block text-base font-medium text-indigo-500 z-30"
+            className="relative inline-block text-base font-medium text-white z-30"
           >
             <span className="block">Contact us</span>
             <span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
               <span
-                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-indigo-500 ${
+                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-white ${
                   hoverContact ? "" : "translate-x-full"
                 }`}
                 style={{ transition: "ease-out 300ms" }}

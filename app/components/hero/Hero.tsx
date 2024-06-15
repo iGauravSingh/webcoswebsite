@@ -26,10 +26,11 @@ const Hero = () => {
 
   return (
     <div className=" relative font-Poppins bg-about">
+      <div className=" absolute top-0 left-0 w-full h-full bg-white/20 backdrop-blur-sm"></div>
       
       <nav className=" w-screen flex items-center justify-between  text-white py-2 px-12">
         {/* logo  */}
-        <div className=" ">
+        <div className=" z-30 ">
           <Image
             src="/webcos.png"
             alt=" webcos logo"
