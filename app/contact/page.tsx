@@ -14,7 +14,7 @@ const page = () => {
                 Contact Us
               </h2>
               <p className="mt-1 text-xl text-gray-700 text-semibold">
-                We'd love to hear from you.
+                We would love to hear from you.
               </p>
             </div>
             <div className="mt-8 text-center"></div>
