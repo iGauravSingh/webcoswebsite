@@ -15,6 +15,8 @@ const config: Config = {
       backgroundImage: {
         "heroimg": "url('/social.png')",
         "heroimg2": "url('/webdev.png')",
+        "train": "url('/training.jpg')",
+        "about": "url('/background/bg1.jpg')",
       },
       colors: {
         logowhite: "#eaeff0",
@@ -29,6 +31,11 @@ const config: Config = {
           '50%': { translate: '0 -12.5px'},
           '60%': { translate: '0 -10px'},
           '80%': { translate: '0 -5px'},
+        },
+        testimonial: {
+          '0%': { translate: '-200px 0'},
+          '100%': { translate: '0 0'},
+
         },
         
       },

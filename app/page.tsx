@@ -6,6 +6,11 @@ import Card from "./components/card/Card";
 import CardContainer from "./components/card/CardContainer";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer";
+import BannerUpper from "./components/banner/BannerUpper";
+import Faq from "./components/faq/Faq";
+import Testimonial from "./components/testimonial/Testimonial";
+import Training from "./components/training/Training";
+import TrainingBanner from "./components/training/TrainingBanner";
 
 
 export default function Home() {
@@ -13,9 +18,14 @@ export default function Home() {
     <>
     
     <Hero />
+    <BannerUpper />
     <Services />
     <CardContainer />
     <Projects />
+    <Testimonial />
+    <TrainingBanner />
+    <Training />
+    <Faq />
     <Footer />
     </>
   );

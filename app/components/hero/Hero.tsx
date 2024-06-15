@@ -1,37 +1,140 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 import { IoMdMenu } from "react-icons/io";
-
+{
+  /* <p className=" z-20 cursor-pointer">Home</p>
+          <p className=" z-20 cursor-pointer">Services</p>
+          <p className=" z-20 cursor-pointer">Training</p>
+          <p className=" z-20 cursor-pointer">About us</p>
+          <p className=" z-20 cursor-pointer">Contact us</p> */
+}
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hoverHome, setHoverHome] = useState(false);
+  const [hoverServices, setHoverServices] = useState(false);
+  const [hoverTraining, setHoverTraining] = useState(false);
+  const [hoverAbout, setHoverAbout] = useState(false);
+  const [hoverContact, setHoverContact] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const [hover, setHover] = useState(false);
 
   return (
-    <div className=" relative">
-      <div className=" absolute top-0 right-0 z-10 opacity-20 w-screen rotate-180">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#0099ff"
-            fill-opacity="1"
-            d="M0,64L60,53.3C120,43,240,21,360,26.7C480,32,600,64,720,85.3C840,107,960,117,1080,101.3C1200,85,1320,43,1380,21.3L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-          ></path>
-        </svg>
-      </div>
-      <nav className=" w-screen flex items-center justify-between bg-logowhite text-white py-2 px-12">
+    <div className=" relative font-Poppins bg-about">
+      
+      <nav className=" w-screen flex items-center justify-between  text-white py-2 px-12">
         {/* logo  */}
         <div className=" ">
-          <Image src="/webcos.png" alt=" webcos logo" width={80} height={80} />
+          <Image
+            src="/webcos.png"
+            alt=" webcos logo"
+            width={80}
+            height={80}
+            className=""
+          />
         </div>
         {/* menu for large  */}
-        <div className=" hidden md:flex gap-8 text-logoblack ">
-          <p className=" z-20 cursor-pointer">Home</p>
+        <div className=" hidden md:flex gap-8 text-logoblack font-semibold ">
+          {/* Home  */}
+          <Link
+            href="/"
+            onMouseEnter={() => setHoverHome(true)}
+            onMouseLeave={() => setHoverHome(false)}
+            className="relative inline-block text-base font-medium text-white z-30"
+          >
+            <span className="block">Home</span>
+            <span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+              <span
+                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-white ${
+                  hoverHome ? "" : "translate-x-full"
+                }`}
+                style={{ transition: "ease-out 300ms" }}
+              ></span>
+            </span>
+          </Link>
+
+          {/* Services  */}
+          <Link
+            href="/services"
+            onMouseEnter={() => setHoverServices(true)}
+            onMouseLeave={() => setHoverServices(false)}
+            className="relative inline-block text-base font-medium text-white z-30"
+          >
+            <span className="block">Services</span>
+            <span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+              <span
+                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-white ${
+                  hoverServices ? "" : "translate-x-full"
+                }`}
+                style={{ transition: "ease-out 300ms" }}
+              ></span>
+            </span>
+          </Link>
+
+          {/* Training  */}
+          <Link
+            href="/training"
+            onMouseEnter={() => setHoverTraining(true)}
+            onMouseLeave={() => setHoverTraining(false)}
+            className="relative inline-block text-base font-medium text-white z-30"
+          >
+            <span className="block">Training</span>
+            <span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+              <span
+                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-white ${
+                  hoverTraining ? "" : "translate-x-full"
+                }`}
+                style={{ transition: "ease-out 300ms" }}
+              ></span>
+            </span>
+          </Link>
+
+          {/* About us  */}
+          <Link
+            href="/about"
+            onMouseEnter={() => setHoverAbout(true)}
+            onMouseLeave={() => setHoverAbout(false)}
+            className="relative inline-block text-base font-medium text-white z-30"
+          >
+            <span className="block">About us</span>
+            <span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+              <span
+                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-white ${
+                  hoverAbout ? "" : "translate-x-full"
+                }`}
+                style={{ transition: "ease-out 300ms" }}
+              ></span>
+            </span>
+          </Link>
+
+          {/* Contact us  */}
+          <Link
+            href="/contact"
+            onMouseEnter={() => setHoverContact(true)}
+            onMouseLeave={() => setHoverContact(false)}
+            className="relative inline-block text-base font-medium text-white z-30"
+          >
+            <span className="block">Contact us</span>
+            <span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+              <span
+                className={`absolute inset-0 inline-block w-full h-full transform border-t-2 border-white ${
+                  hoverContact ? "" : "translate-x-full"
+                }`}
+                style={{ transition: "ease-out 300ms" }}
+              ></span>
+            </span>
+          </Link>
+
+          {/* <p className=" z-20 cursor-pointer">Home</p>
+          <p className=" z-20 cursor-pointer">Services</p>
+          <p className=" z-20 cursor-pointer">Training</p>
           <p className=" z-20 cursor-pointer">About us</p>
-          <p className=" z-20 cursor-pointer">Contact us</p>
+          <p className=" z-20 cursor-pointer">Contact us</p> */}
         </div>
 
         {/* burger for small  */}
@@ -43,7 +146,7 @@ const Hero = () => {
 
       {/* ////////////////////////////////////  */}
 
-      <div className=" w-screen h-screen bg-logowhite flex flex-col gap-4 md:flex-row font-Poppins items-center justify-center px-12">
+      <div className=" w-screen h-screen  flex flex-col gap-4 md:flex-row font-Poppins items-center justify-center px-12">
         {/* image section  */}
 
         <div className=" w-[100%] md:w-[50%] h-full overflow-clip z-20">
@@ -59,11 +162,11 @@ const Hero = () => {
         </div>
 
         {/* description section  */}
-        <div className=" relative w-[100%] md:w-[50%] h-full overflow-clip flex flex-col justify-center gap-5">
-          <h1 className=" text-5xl text-logoblue font-bold text-wrap">
+        <div className=" relative w-[100%] md:w-[50%] h-full overflow-clip flex flex-col justify-center gap-2 md:gap-5">
+          <h1 className=" text-2xl md:text-5xl text-white font-bold text-wrap">
             Build stunning websites & apps.
           </h1>
-          <p className=" text-lg text-logoblack font-semibold">
+          <p className=" md:text-lg text-logoblack font-semibold">
             Create live segments and target the right people for messages based
             on their behaviors.
           </p>
