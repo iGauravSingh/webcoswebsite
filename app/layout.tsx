@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Webcos',
   description: 'The official Webcos home page.',
   icons: {
-    icon: '/webcos2.png',
+    icon: '/favicon.ico',
   },
 };
 

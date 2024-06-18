@@ -4,7 +4,7 @@ import { FaFileCode } from "react-icons/fa";
 
 const TrainingBanner = () => {
   return (
-    <div className=' w-screen h-[500px] bg-train bg-cover bg-center bg-fixed mt-5 flex justify-start items-center font-Poppins'>
+    <div className=' w-screen h-[500px] bg-train bg-cover bg-center bg-fixed mt-8 flex justify-start items-center font-Poppins'>
         <div className=' flex flex-col gap-5 pl-20'>
             <p className=' text-md font-bold text-white tracking-wide'>EDUCATION BENIFITS</p>
             <div className=' text-white font-semibold tracking-wider text-4xl flex flex-col'>

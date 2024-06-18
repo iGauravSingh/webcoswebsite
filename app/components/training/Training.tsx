@@ -30,7 +30,7 @@ const Training = () => {
           <div key={item.id} className=" relative group w-[300px] h-[200px]">
             <Image className=" brightness-75" src={item.image} alt={item.text} width={300} height={200} />
             <p className=" group-hover:hidden absolute top-1/2 left-1/2 -translate-x-1/2 z-20 -translate-y-1/2 text-white text-nowrap text-xl">{item.text}</p>
-            <div className=" w-full absolute top-1/2 left-1/2 -translate-x-1/2 z-20 -translate-y-1/2 hidden group-hover:block">
+            <div className=" w-full absolute top-1/2 left-1/2 -translate-x-1/2 z-20 -translate-y-1/2 hidden group-hover:block ease-in-out">
             <p className=" text-white text-center text-wrap px-2">{item.desc}</p>
             <div className=" w-full flex justify-center">
               <Link href="/training">

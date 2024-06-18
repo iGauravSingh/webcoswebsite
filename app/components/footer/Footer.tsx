@@ -10,11 +10,13 @@ const Footer = () => {
         <div
             className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
             <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-                <Image src="/webcos.png" alt='footewr logo' width={150} height={150} />
+                <div className=' flex justify-center md:justify-start'>
+                <Image className=' ' src="/webcosnewlogo21.png" alt='footewr logo' width={150} height={150} />
+                </div>
                 
-                <div className="mt-4">
+                <div className="mt-4 md:pl-6">
                     <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-                        <a className="text-gray-200 cursor-pointer hover:text-gray-700">
+                        <a href='https://www.facebook.com/profile.php?id=61559272588070&mibextid=ZbWKwL' className="text-gray-200 cursor-pointer hover:text-gray-700">
                             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 className="w-5 h-5" viewBox="0 0 24 24">
                                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
@@ -28,7 +30,7 @@ const Footer = () => {
                                 </path>
                             </svg>
                         </a>
-                        <a className="ml-3 text-gray-200 cursor-pointer hover:text-gray-700">
+                        <a href='https://www.instagram.com/web_cos_software_solutions?igsh=ZnYyc2N4d3R2NHRy' className="ml-3 text-gray-200 cursor-pointer hover:text-gray-700">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
                                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
