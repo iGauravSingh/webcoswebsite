@@ -10,39 +10,37 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        Poppins: ["Poppins", "sans-serif"]
+        Poppins: ["Poppins", "sans-serif"],
       },
       backgroundImage: {
-        "heroimg": "url('/social.png')",
-        "heroimg2": "url('/webdev.png')",
-        "train": "url('/training.jpg')",
-        "about": "url('/background/bg1.jpg')",
+        heroimg: "url('/social.png')",
+        heroimg2: "url('/webdev.png')",
+        train: "url('/training.jpg')",
+        about: "url('/background/bg1.jpg')",
       },
       colors: {
         logowhite: "#eaeff0",
         logoblack: "#222627",
-        logoblue: "#275d8c"
+        logoblue: "#275d8c",
       },
       keyframes: {
         herobounce: {
-          '0%, 100%': { translate: '0 0'},
-          '20%': { translate: '0 -5px'},
-          '40%': { translate: '0 -10px'},
-          '50%': { translate: '0 -12.5px'},
-          '60%': { translate: '0 -10px'},
-          '80%': { translate: '0 -5px'},
+          "0%, 100%": { translate: "0 0" },
+          "20%": { translate: "0 -5px" },
+          "40%": { translate: "0 -10px" },
+          "50%": { translate: "0 -12.5px" },
+          "60%": { translate: "0 -10px" },
+          "80%": { translate: "0 -5px" },
         },
         testimonial: {
-          '0%': { translate: '-200px 0'},
-          '100%': { translate: '0 0'},
-
+          "0%": { translate: "-200px 0" },
+          "100%": { translate: "0 0" },
         },
-        
       },
       animation: {
-        'herobounce': 'herobounce 3.5s ease-in-out infinite'
-      }
-    } 
+        herobounce: "herobounce 3.5s ease-in-out infinite",
+      },
+    },
   },
   plugins: [],
 };
