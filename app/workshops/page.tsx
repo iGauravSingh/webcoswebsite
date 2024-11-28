@@ -33,9 +33,16 @@ const Workshops = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        {data?.data.result.workshops.map((workshop) => (
-          <EventCard key={workshop.id} event={workshop} />
-        ))}
+        {data?.data.result.workshops &&
+        data?.data.result.workshops.length > 0 ? (
+          data?.data.result.workshops.map((workshop) => (
+            <EventCard key={workshop.id} event={workshop} />
+          ))
+        ) : (
+          <p className="w-full text-center col-span-full">
+            There is not any active workshop.
+          </p>
+        )}
       </div>
     </section>
   );

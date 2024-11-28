@@ -30,7 +30,9 @@ const EventCard: React.FC<{ event: Event }> = ({ event }) => {
 
       <div className="mt-4">
         <h2 className="text-2xl font-semibold text-purple-600">{title}</h2>
-        <p className="text-sm text-gray-500 mt-2">{description}</p>
+        <p className="text-sm text-gray-500 mt-2 text-ellipsis line-clamp-3">
+          {description}
+        </p>
 
         <div className="mt-4">
           <p className="text-md font-semibold text-gray-700">

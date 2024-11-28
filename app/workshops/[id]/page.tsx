@@ -69,8 +69,8 @@ const WorkshopRegister = () => {
           });
         }}
       >
-        <Form className="space-y-10">
-          <div className="flex gap-2 items-center md:flex-row flex-col">
+        <Form className="md:px-0 p-6 flex flex-col gap-10">
+          <div className="flex gap-2 md:items-center md:flex-row flex-col">
             <Input
               className="flex-1"
               label="Name"
@@ -87,7 +87,7 @@ const WorkshopRegister = () => {
             />
           </div>
 
-          <div className="flex gap-2 items-center md:flex-row flex-col">
+          <div className="flex gap-2 md:items-center md:flex-row flex-col">
             <Input
               className="flex-1"
               label="Phone"
@@ -104,7 +104,7 @@ const WorkshopRegister = () => {
             />
           </div>
 
-          <div className="flex gap-2 items-center md:flex-row flex-col">
+          <div className="flex gap-2 md:items-center md:flex-row flex-col">
             <Input
               className="flex-1"
               label="College"
@@ -121,7 +121,7 @@ const WorkshopRegister = () => {
             />
           </div>
 
-          <div className="flex gap-2 items-center md:flex-row flex-col">
+          <div className="flex gap-2 md:items-center md:flex-row flex-col">
             <Input
               className="flex-1"
               label="Address"

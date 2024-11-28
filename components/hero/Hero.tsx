@@ -11,9 +11,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="my-16 relative grid place-items-center h-[800px]">
+    <section className="my-16 relative grid place-items-center md:h-[800px] h-full md:py-0 py-4">
       <div className="absolute z-10 opacity-70 top-0 left-0 w-full h-full bg-[url(/hero_bg.png)] bg-[0%_100%] bg-repeat-x"></div>
-      <div className="relative z-20 container mx-auto px-8 flex gap-8 items-center">
+      <div className="relative z-20 container mx-auto px-8 flex lg:flex-row flex-col-reverse gap-8 items-center">
         <div className="text-center lg:text-left flex-1">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
             Build stunning websites & apps.
